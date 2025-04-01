@@ -1,0 +1,24 @@
+To run this code, first perform a gradle clean before doing a gradle test to run the test files.
+
+On windows, this is ./gradlew.bat clean followed by ./gradlew.bat test
+
+Part 1a Commit:
+ff95f84ae27c1223e7675f88355e9853152e1f76
+
+Please go through to unittest for the detailed README about the unit tests. These details are also in the code.
+src\test\java\ser515\unittest\README.md
+
+Part 1b Commit:
+151f0ebefa386e0aaa8fb333a25e0d19aacc0a57
+
+Same deal as last time. Please go through to unittest for the detailed README about the unit tests. These details are also in the code.
+src\test\java\ser515\unittest\README.md
+
+The zip files contain the coverage reports for 1a without reading jacoco reports and 1b after reading jacoco reports and aiming for 100% coverage.
+
+
+Part 2d Commit:
+bb3099702bb4a69e58598954826564c6153baf93
+
+Feel free to run pmdMain from gradle to verify the checks of the fixes. The only violations thrown up are from Smell1AlmostBest.java
+The command on windows is: ./gradlew.bat pmdMain. I'm not sure about Mac or Linux.
