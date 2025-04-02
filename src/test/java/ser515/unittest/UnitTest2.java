@@ -13,7 +13,3 @@ public class UnitTest2 {
         Assertions.assertEquals(1, 1);
     }
 
-
-
-
-}

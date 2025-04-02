@@ -33,4 +33,25 @@ task runArg(type: JavaExec) {
    mainClass = 'inclass.HelloWorld'
 }
 
+task fastTest(type: Test) {
+   useJUnitPlatform()
+   classpath = sourceSets.test.runtimeClasspath
+   filter {
+      includeTestsMatching 'ser515.unittest.UnitTest2'
+   }	
+
+}
+
+task fullTest(type: Test) {
+   useJUnitPlatform()
+   classpath = sourceSets.test.runtimeClasspath
+   filter {
+      includeTestsMatching 'ser515.unittest.UnitTest2'
+      includeTestsMatching 'ser515.unittest.UnitTest'
+
+   }	
+
+}
+
+
 
