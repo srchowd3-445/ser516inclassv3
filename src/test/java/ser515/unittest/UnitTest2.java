@@ -6,7 +6,7 @@ public class UnitTest2 {
 
     @Test
     void testReturn(){
-        Assertions.assertEquals(1, HelloWorld.returnOne());
+        Assertions.assertEquals(0, HelloWorld.returnOne());
     }
     @Test
     void testToHellWorld() {
