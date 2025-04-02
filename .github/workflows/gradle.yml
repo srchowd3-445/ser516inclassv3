@@ -9,7 +9,7 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev" ]
   pull_request:
     branches: [ "main" ]
 
@@ -33,6 +33,14 @@ jobs:
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
+
+    - name: Run fastTest on dev
+      if: github.ref == 'refs/heads/dev'
+      run: ./gradlew fastTest
+
+    - name: Run fullTest on main branch
+      if: github.ref == 'refs/heads/main'
+      run: ./gradlew fullTest
 
   dependency-submission:
 
