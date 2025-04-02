@@ -12,4 +12,4 @@ public class UnitTest2 {
     void testToHellWorld() {
         Assertions.assertEquals(1, 1);
     }
-
+}
